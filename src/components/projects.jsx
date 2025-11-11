@@ -1,0 +1,227 @@
+export const projects = [
+  {
+    id: 1,
+    Title: 'ALGOVISTA - Next Gen DSA Platform',
+    Description: 'A professional-grade learning platform engineered for developers and students to master Data Structures and Algorithms through immersive, hands-on learning with real-time algorithm execution and interactive visualizations.',
+    Img: 'https://miro.medium.com/0*RgDby7Ef-IjxXtFX',
+    Link: 'https://github.com/AbhishekGiri04/AlgoVista',
+    TechStack: ['React', 'Tailwind CSS', 'Framer Motion', 'HTML', 'CSS', 'Node.js', 'Express.js', 'C++'],
+    Features: ['Interactive Algorithm Visualization', 'Real-time Code Execution', 'Professional Learning Interface', 'Comprehensive DSA Coverage']
+  },
+  {
+    id: 2,
+    Title: 'Sparo — Smart Inbox Defender',
+    Description: 'A Python Streamlit-based enterprise web application for intelligent SMS spam detection and classification with 97.1% accuracy, featuring advanced ML algorithms and real-time threat analysis.',
+    Img: 'https://editor.analyticsvidhya.com/uploads/32086heading.jpeg',
+    Link: 'https://github.com/AbhishekGiri04/Sparo-Smart_Inbox_Defender',
+    TechStack: ['Python', 'Streamlit', 'Scikit-Learn', 'NLTK', 'Plotly'],
+    Features: ['97.1% Accuracy Rate', 'Real-time Threat Analysis', 'Advanced ML Algorithms', 'Enterprise-grade Security']
+  },
+  {
+    id: 3,
+    Title: 'CodeSphere',
+    Description: 'A modern collaborative coding platform that brings teams together with real-time code editing, interactive whiteboard, and instant code execution. Perfect for pair programming, code reviews, and technical interviews with Java-first approach supporting multiple languages.',
+    Img: 'https://www.augmentedmind.de/wp-content/uploads/2020/06/collaborative-editor-feature.jpg',
+    Link: 'https://github.com/AbhishekGiri04/CodeSphere',
+    TechStack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Node.js', 'Express.js', 'Socket.IO', 'Docker'],
+    Features: ['Real-time Code Editing', 'Interactive Whiteboard', 'Multi-language Support', 'Instant Code Execution']
+  },
+  {
+    id: 4,
+    Title: 'Maritime Intelligence Platform',
+    Description: 'A comprehensive web application for processing maritime documents using advanced AI technology, with intelligent event extraction and real-time analytics for Statement of Facts (SOF) and operational documents.',
+    Img: 'https://img.freepik.com/premium-photo/cargo-vessel-international-logistics-shipping-ai-generated_145713-14780.jpg',
+    Link: 'https://github.com/AbhishekGiri04/Maritime-Intelligence-Platform',
+    TechStack: ['React.js', 'FastAPI', 'Node.js', 'Tesseract', 'Python', 'Tailwind CSS', 'Vite'],
+    Features: ['AI-powered OCR', 'Intelligent Event Extraction', 'Real-time Analytics', 'Maritime Document Processing']
+  },
+  {
+    id: 5,
+    Title: 'GuessMaster Arena',
+    Description: 'A cutting-edge real-time multiplayer gaming platform featuring intelligent AI opponents, competitive gameplay, and modern web technologies for number guessing battles and strategic gaming experiences.',
+    Img: 'https://mir-s3-cdn-cf.behance.net/projects/404/62e299234793355.Y3JvcCw4NjAsNjcyLDAsNjEz.jpg',
+    Link: 'https://github.com/AbhishekGiri04/GuessMaster_Arena',
+    TechStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO', 'JWT', 'CSS'],
+    Features: ['Real-time Multiplayer Gaming', 'AI Opponents', 'Competitive Leaderboards', 'Strategic Gameplay']
+  },
+  {
+    id: 6,
+    Title: 'CineMorph — AI Movie Genre Classifier',
+    Description: 'A Python Streamlit-based AI web application for intelligent movie genre classification with 85.2% accuracy, featuring advanced ML algorithms and real-time plot analysis.',
+    Img: 'https://miro.medium.com/v2/resize:fit:3840/1*jbfWuj3RSAAvmJeBwLWbsw.jpeg',
+    Link: 'https://github.com/AbhishekGiri04/CineMorph-AI_Movie_Genre_Classifier',
+    TechStack: ['Python', 'Streamlit', 'Scikit-Learn', 'TF-IDF', 'Plotly', 'Pandas', 'NumPy'],
+    Features: ['85.2% Classification Accuracy', 'Real-time Plot Analysis', 'Advanced NLP Processing', 'Interactive Genre Prediction']
+  },
+  {
+    id: 7,
+    Title: 'HawkPay — Smart Fraud Detection',
+    Description: 'A Python Streamlit-based enterprise web application for intelligent credit card fraud detection and classification with 99.05% accuracy, featuring advanced LightGBM algorithms and real-time transaction analysis.',
+    Img: 'https://cdn.sanity.io/images/9sed75bn/production/116ca6fc51f2f98318bf4f24cd05383a69023c04-896x504.png?auto=format',
+    Link: 'https://github.com/AbhishekGiri04/HawkPay-Smart_Fraud_Detection',
+    TechStack: ['Python', 'Streamlit', 'LightGBM', 'Scikit-Learn', 'Plotly'],
+    Features: ['99.05% Detection Accuracy', 'Real-time Transaction Analysis', 'Advanced LightGBM Algorithms', 'Enterprise Security']
+  },
+  {
+    id: 8,
+    Title: 'VisionX — AI-Powered Vision Platform',
+    Description: 'A comprehensive AI vision platform for real-time face detection and object recognition, powered by advanced computer vision algorithms and modern web technologies for intelligent visual analysis and automated detection systems.',
+    Img: 'https://cdn.analyticsvidhya.com/wp-content/uploads/2020/09/10-incredible-open-source-computer-vision-projects-for-beginner.jpg',
+    Link: 'https://github.com/AbhishekGiri04/VisionX',
+    TechStack: ['React', 'FastAPI', 'Python', 'OpenCV', 'TensorFlow', 'Node.js'],
+    Features: ['Real-time Face Detection', 'Object Recognition', 'Computer Vision Analytics', 'Automated Detection Systems']
+  },
+  {
+    id: 9,
+    Title: 'LaneSight Vision AI',
+    Description: 'An advanced computer vision platform that combines React frontend with Python backend for professional lane detection, vehicle tracking, and automotive safety assistance with real-time curvature analysis and intelligent departure warnings.',
+    Img: 'https://etimg.etb2bimg.com/thumb/msid-101539194,imgsize-2839883,width-1200,height=627,overlay-etinfra,resizemode-75/news/roads-highways/kcp-infra-limited-completes-8-lane-project-on-nh45.jpg',
+    Link: 'https://github.com/AbhishekGiri04/LaneSight-Lane_Detection_System',
+    TechStack: ['React', 'FastAPI', 'OpenCV', 'Python', 'JavaScript', 'NumPy'],
+    Features: ['Professional Lane Detection', 'Vehicle Tracking', 'Real-time Curvature Analysis', 'Intelligent Safety Warnings']
+  },
+  {
+    id: 10,
+    Title: 'NeuroAttend',
+    Description: 'A professional AI-powered attendance management system with advanced facial recognition, real-time biometric analysis, and automated alert capabilities featuring 99.97% accuracy and sub-100ms processing.',
+    Img: 'https://www.timechamp.io/blogs/wp-content/uploads/2023/08/Online-Attendance-Management-System-scaled.jpg',
+    Link: 'https://github.com/AbhishekGiri04/NeuroAttend-Attendance_Management_System',
+    TechStack: ['React', 'FastAPI', 'Python', 'OpenCV', 'Tailwind CSS', 'SQLite'],
+    Features: ['99.97% Facial Recognition Accuracy', 'Sub-100ms Processing', 'Real-time Biometric Analysis', 'Automated Alert System']
+  },
+  {
+    id: 11,
+    Title: 'Plan My Trip',
+    Description: 'A comprehensive web application for students to plan budget-friendly trips using advanced AI technology, with intelligent itinerary generation and real-time weather data for personalized travel experiences and smart recommendations.',
+    Img: 'https://img.freepik.com/premium-vector/travel-time-vector-background-design-time-travel-text-with-3d-luggage-bag-sunglasses-hat_572293-2504.jpg',
+    Link: 'https://github.com/AbhishekGiri04/Plan-My-Trip',
+    TechStack: ['React', 'FastAPI', 'Python', 'Scikit-Learn', 'Tailwind CSS', 'OpenWeather'],
+    Features: ['AI-powered Itinerary Generation', 'Budget Optimization', 'Real-time Weather Integration', 'Student-focused Planning']
+  },
+  {
+    id: 12,
+    Title: 'AmazeWorth — Smart Price Engine v2.1',
+    Description: 'Next-Generation AI-Powered Product Price Prediction Platform with advanced monitoring, caching, and real-time analytics that predicts optimal product prices using cutting-edge LightGBM + TF-IDF + Intelligent Heuristics technology.',
+    Img: 'https://media.licdn.com/dms/image/v2/D4E12AQG_Q3uAp-5HkQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1712218362253?e=2147483647&v=beta&t=5O1xK1wTRyVJTl3aQME_09OCcu324Y9lzQtNPJKSlTI',
+    Link: 'https://github.com/AbhishekGiri04/AmazeWorth',
+    TechStack: ['React', 'FastAPI', 'Python', 'LightGBM', 'Tailwind CSS', 'Machine Learning'],
+    Features: ['Advanced Price Prediction', 'Real-time Analytics', 'Intelligent Caching', 'LightGBM + TF-IDF Technology']
+  },
+  {
+    id: 13,
+    Title: 'NestMetrics',
+    Description: 'A comprehensive full-stack data science application that combines predictive analytics, real-time insights, and interactive visualizations to help travelers make smarter accommodation choices using AI-powered intelligence.',
+    Img: 'https://www.hotellinksolutions.com/images/blog/avt.jpg',
+    Link: 'https://github.com/AbhishekGiri04/NestMetrics',
+    TechStack: ['React', 'Flask', 'Python', 'Machine Learning', 'Tailwind CSS', 'Random Forest'],
+    Features: ['Predictive Analytics', 'Interactive Visualizations', 'AI-powered Intelligence', 'Smart Booking Insights']
+  },
+  {
+    id: 14,
+    Title: 'NetNova',
+    Description: 'A comprehensive full-stack AI-powered business intelligence platform that transforms Netflix\'s 7,789+ content dataset into actionable strategic insights for streaming platforms and content strategists.',
+    Img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNibjDk4NCFVIvgUU9JHXHnpcxmqG_G0fZfA&s',
+    Link: 'https://github.com/AbhishekGiri04/NetNova',
+    TechStack: ['React', 'FastAPI', 'Python', 'Scikit-Learn', 'Tailwind CSS', 'Vite'],
+    Features: ['7,789+ Content Analysis', 'Strategic Business Intelligence', 'AI-powered Recommendations', 'Streaming Industry Insights']
+  },
+  {
+    id: 15,
+    Title: 'Orderly',
+    Description: 'A comprehensive web application for intelligent food delivery analytics using advanced machine learning technology, with real-time restaurant performance predictions and personalized recommendations for Swiggy & Zomato Integration.',
+    Img: 'https://www.travelerfood.com/blog/wp-content/uploads/2024/04/Online-Food-Order.jpg',
+    Link: 'https://github.com/AbhishekGiri04/Orderly-Smart_Food_Recommender',
+    TechStack: ['React', 'Flask', 'Python', 'Scikit-Learn', 'Tailwind CSS', 'Machine Learning'],
+    Features: ['Intelligent Food Recommendations', 'Restaurant Performance Predictions', 'Swiggy & Zomato Integration', 'Real-time Analytics']
+  },
+  {
+    id: 16,
+    Title: 'SimuLock',
+    Description: 'An interactive web-based simulator for understanding, detecting, and preventing deadlocks in operating systems using binary semaphores, with real-time visualization and intelligent resource allocation algorithms.',
+    Img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXOdiifJsJ0DiUalzDZqUSkqCaUjwhkCLaZPmFQLzNDai5esci3Wp1o_fZ2mCX_FFAjJg&usqp=CAU',
+    Link: 'https://github.com/AbhishekGiri04/SimuLock-Deadlock_Detection_Simulator',
+    TechStack: ['Python', 'Flask', 'JavaScript', 'HTML', 'Tailwind CSS', 'Socket.IO'],
+    Features: ['Interactive Deadlock Simulation', 'Real-time Visualization', 'Binary Semaphore Implementation', 'Educational OS Concepts']
+  },
+  {
+    id: 17,
+    Title: 'Project Mirage',
+    Description: 'A cutting-edge computer vision application that creates real-time invisibility effects using advanced OpenCV algorithms and HSV color detection technology.',
+    Img: 'https://cdn.zmescience.com/wp-content/uploads/2015/09/640_invisibility-cloak.jpg',
+    Link: 'https://github.com/AbhishekGiri04/Project-Mirage',
+    TechStack: ['Python', 'OpenCV', 'NumPy', 'Computer Vision'],
+    Features: ['Real-time Invisibility Effects', 'Advanced HSV Color Detection', 'Computer Vision Processing', 'OpenCV Integration']
+  },
+  {
+    id: 18,
+    Title: 'TimelyBuddy',
+    Description: 'A comprehensive academic ERP system for intelligent timetable scheduling with user authentication, role-based access, and complete academic management features.',
+    Img: 'https://www.chalkbox.in/images/erpimage.png',
+    Link: 'https://github.com/AbhishekGiri04/TimelyBuddy',
+    TechStack: ['Flask', 'Python', 'SQLite', 'Bootstrap', 'JavaScript', 'HTML'],
+    Features: ['Intelligent Timetable Scheduling', 'User Authentication', 'Role-based Access Control', 'Academic Management System']
+  },
+  {
+    id: 19,
+    Title: 'Navion',
+    Description: 'A next-generation navigation platform with AI-powered routing, AR navigation, and social features for intelligent location discovery and real-time navigation experiences.',
+    Img: 'https://media.istockphoto.com/id/1128192660/vector/blue-city-map-navigation-design.jpg?s=612x612&w=0&k=20&c=t6zytAUMZFdOs-A7GEbPdGdxQPo72l-u07Wpc7KfxH4=',
+    Link: 'https://github.com/AbhishekGiri04/Navion-Smart_Navigation_Platform',
+    TechStack: ['React', 'Vite', 'Leaflet', 'Tailwind CSS', 'Framer Motion', 'JavaScript'],
+    Features: ['AI-powered Routing', 'AR Navigation', 'Social Discovery Features', 'Real-time Location Services']
+  },
+  {
+    id: 20,
+    Title: 'CollabMeet',
+    Description: 'A comprehensive web application for real-time collaboration featuring WebRTC video calls, live whiteboard, and seamless team communication with professional meeting management.',
+    Img: 'https://amazy-static.s3.eu-central-1.amazonaws.com/amazy-storage/ea8/057/2d5/653b74b3b0a4906fdfde37ed_best-online-meeting-platforms_1702494541.jpg',
+    Link: 'https://github.com/AbhishekGiri04/CollabMeet',
+    TechStack: ['HTML', 'JavaScript', 'Node.js', 'WebRTC', 'Tailwind CSS', 'WebSocket'],
+    Features: ['WebRTC Video Calls', 'Live Whiteboard', 'Real-time Collaboration', 'Professional Meeting Management']
+  },
+  {
+    id: 21,
+    Title: 'GEHU Aspire',
+    Description: 'A comprehensive placement management system for Graphic Era Hill University (GEHU) that connects students, companies, and administrators with modern web technologies and professional UI/UX design.',
+    Img: 'https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/470/538/datas/original.png',
+    Link: 'https://github.com/AbhishekGiri04/GEHU-Smart_Placement_Portal',
+    TechStack: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
+    Features: ['Student-Company Connection', 'Modern UI/UX Design', 'Placement Management', 'Administrative Dashboard']
+  },
+  {
+    id: 22,
+    Title: 'MoodMart',
+    Description: 'Emotion-aware AI e-commerce platform that detects your mood in real time to deliver personalized product recommendations and a smarter, more human shopping experience.',
+    Img: 'https://st4.depositphotos.com/7341970/40159/v/450/depositphotos_401593532-stock-illustration-online-grocery-shopping-vector-illustration.jpg',
+    Link: 'https://github.com/AbhishekGiri04/MoodMart',
+    TechStack: ['Python', 'Flask', 'OpenCV', 'DeepFace'],
+    Features: ['Real-time Emotion Detection', 'Personalized Recommendations', 'AI-powered Shopping', 'Mood-based Product Suggestions']
+  },
+  {
+    id: 23,
+    Title: 'CareConnect',
+    Description: 'IoT-powered smart home system for accessible living, featuring fall detection, motion sensing, temperature alerts, and smart lighting using ESP32, MPU6050, PIR, and DHT22.',
+    Img: 'https://lh5.googleusercontent.com/proxy/2eApGf4vScda0gR4mSgod0k5TE-MD9oLeZRkMm494ftiyc6F0gL36rgb_qujV4QXjQgjitGg47j8unVkrJNW3VM',
+    Link: 'https://github.com/AbhishekGiri04/CareConnect',
+    TechStack: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js', 'Firebase', 'TensorFlow'],
+    Features: ['IoT Fall Detection', 'Motion Sensing', 'Temperature Alerts', 'Smart Lighting Control']
+  },
+  {
+    id: 24,
+    Title: 'Portfolio-Abhinova',
+    Description: 'Hello, I\'m Abhishek Giri! Welcome to my personal portfolio — a showcase of my journey as a developer, highlighting my skills, innovative projects, and passion for building impactful technology solutions.',
+    Img: 'https://wpvip.edutopia.org/wp-content/uploads/2022/10/robinson-169hero-portfolio-shutterstock.jpg?w=2880&quality=85',
+    Link: 'https://github.com/AbhishekGiri04/Portfolio-Abhinova',
+    TechStack: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vite'],
+    Features: ['Professional Portfolio Design', 'Interactive Animations', 'Responsive Layout', 'Modern Web Technologies']
+  },
+  {
+    id: 25,
+    Title: 'Portfolio-Nexus',
+    Description: 'Hi, I\'m Abhishek Giri! Explore my portfolio to discover my work as a passionate developer — creating smart, creative, and impactful tech projects that turn ideas into reality.',
+    Img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa7O295F1H8jT7rps5u7FPvhQksHLeuOGEu63FSSbv1gXT4VfBNImceDwHtSqUIjfCx-4&usqp=CAU',
+    Link: 'https://github.com/AbhishekGiri04/Portfolio-Nexus',
+    TechStack: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vite', 'Lucide React'],
+    Features: ['Modern Portfolio Interface', 'Interactive Elements', 'Project Showcase', 'Professional Design System']
+  }
+];
