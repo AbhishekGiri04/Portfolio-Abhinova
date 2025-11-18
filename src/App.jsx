@@ -28,27 +28,34 @@ const Footer = ({ owner = "Abhishek Giri" }) => {
   );
 };
 
-const LandingPage = ({ showWelcome, setShowWelcome }) => (
-  <>
-    <AnimatePresence mode="wait">
-      {showWelcome && (
-        <WelcomeScreen onLoadingComplete={() => setShowWelcome(false)} />
-      )}
-    </AnimatePresence>
+const LandingPage = ({ showWelcome, setShowWelcome }) => {
+  console.log('LandingPage rendering, showWelcome:', showWelcome);
+  
+  return (
+    <>
+      <AnimatePresence mode="wait">
+        {showWelcome && (
+          <WelcomeScreen onLoadingComplete={() => {
+            console.log('Welcome screen completed, setting showWelcome to false');
+            setShowWelcome(false);
+          }} />
+        )}
+      </AnimatePresence>
 
-    {!showWelcome && (
-      <>
-        <Navbar />
-        <AnimatedBackground />
-        <Home />
-        <About />
-        <Portfolio />
-        <ContactPage />
-        <Footer owner="Abhishek Giri" />
-      </>
-    )}
-  </>
-);
+      {!showWelcome && (
+        <>
+          <Navbar />
+          <AnimatedBackground />
+          <Home />
+          <About />
+          <Portfolio />
+          <ContactPage />
+          <Footer owner="Abhishek Giri" />
+        </>
+      )}
+    </>
+  );
+};
 
 const ProjectPageLayout = () => (
   <>
@@ -59,6 +66,8 @@ const ProjectPageLayout = () => (
 
 function App() {
   const [showWelcome, setShowWelcome] = useState(true);
+
+  console.log('App rendering, showWelcome:', showWelcome);
 
   return (
     <BrowserRouter>

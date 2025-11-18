@@ -49,6 +49,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    console.log('WelcomeScreen mounted');
     AOS.init({
       duration: 1000,
       once: false,
@@ -56,11 +57,13 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
     });
 
     const timer = setTimeout(() => {
+      console.log('Setting isLoading to false');
       setIsLoading(false);
       setTimeout(() => {
+        console.log('Calling onLoadingComplete');
         onLoadingComplete?.();
       }, 1000);
-    }, 4000);
+    }, 2000); // Reduced from 4000 to 2000 for faster testing
 
     return () => clearTimeout(timer);
   }, [onLoadingComplete]);
