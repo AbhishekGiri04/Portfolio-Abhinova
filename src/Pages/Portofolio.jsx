@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { projects as projectsData } from "../components/projects.jsx";
 import PropTypes from "prop-types";
-import SwipeableViews from "react-swipeable-views";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import { useTheme } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Tabs from "@mui/material/Tabs";
