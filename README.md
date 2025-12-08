@@ -41,7 +41,7 @@ Portfolio-Abhinova is designed to provide:
 ## 🚀 Features
 
 ✅  **Interactive Welcome Screen** with typewriter effects  
-✅  **Dynamic Project Portfolio** with 25+ projects showcase  
+✅  **Dynamic Project Portfolio** with 29 projects showcase  
 ✅  **Real-time Comments System** with local storage  
 ✅  **Professional About Section** with animated statistics  
 ✅  **Skills & Technology Stack** with interactive icons  
@@ -109,40 +109,53 @@ Portfolio-Abhinova is designed to provide:
 ```
 Portfolio-Abhinova/
 ├── 📂 public/                     # 🎨 Static assets and resources
-│   ├── 📂 icons/                 # 🔧 Technology stack icons
-│   ├── 📂 certificates/          # 🏆 Professional certificates
 │   ├── 📂 assets/                # 🖼️ Images and animations
-│   └── 📄 AbhishekGiriResume.pdf # 📄 Professional resume
+│   │   ├── 📄 Photo.png          # 👤 Profile photo
+│   │   └── 📄 RobotSaludando.lottie # 🤖 Robot animation
+│   ├── 📂 certificates/          # 🏆 Professional certificates
+│   │   ├── 📄 Certificate1.png   # 🏆 Certificate 1
+│   │   ├── 📄 Certificate2.png   # 🏆 Certificate 2
+│   │   └── ... (9 certificates)  # 🏆 More certificates
+│   ├── 📂 icons/                 # 🔧 Technology stack icons
+│   │   ├── 📄 Python.svg         # 🐍 Python icon
+│   │   ├── 📄 Reactjs.svg        # ⚛️ React icon
+│   │   └── ... (13 icons)        # 🛠️ More tech icons
+│   ├── 📄 AbhishekGiriResume.pdf # 📄 Professional resume
+│   └── 📄 googleabhishekgiri2004.html # 🔍 Google verification
 ├── 📂 src/                       # 💻 Source code directory
 │   ├── 📂 components/            # 🧩 Reusable UI components
-│   │   ├── 📄 Navbar.jsx         # 🔝 Navigation component
 │   │   ├── 📄 Background.jsx     # 🌌 Animated background
 │   │   ├── 📄 CardProject.jsx    # 📋 Project card component
 │   │   ├── 📄 Certificate.jsx    # 🏆 Certificate modal
 │   │   ├── 📄 Commentar.jsx      # 💬 Comments system
-│   │   ├── 📄 SocialLinks.jsx    # 🔗 Social media links
+│   │   ├── 📄 Navbar.jsx         # 🔝 Navigation component
 │   │   ├── 📄 ProjectDetail.jsx  # 📊 Project details page
-│   │   ├── 📄 TechStackIcon.jsx  # 🛠️ Technology icons
-│   │   └── 📄 projects.jsx       # 📁 Projects data
+│   │   ├── 📄 projects.jsx       # 📁 Projects data (29 projects)
+│   │   ├── 📄 SocialLinks.jsx    # 🔗 Social media links
+│   │   └── 📄 TechStackIcon.jsx  # 🛠️ Technology icons
 │   ├── 📂 Pages/                 # 📄 Main application pages
-│   │   ├── 📄 Home.jsx           # 🏠 Landing page
 │   │   ├── 📄 About.jsx          # ℹ️ About section
-│   │   ├── 📄 Portofolio.jsx     # 💼 Portfolio showcase
 │   │   ├── 📄 Contact.jsx        # 📧 Contact form
-│   │   └── 📄 WelcomeScreen.jsx  # 👋 Welcome animation
+│   │   ├── 📄 Home.jsx           # 🏠 Landing page with robot animation
+│   │   ├── 📄 Portofolio.jsx     # 💼 Portfolio showcase
+│   │   └── 📄 WelcomeScreen.jsx  # 👋 Welcome animation (5.5s)
 │   ├── 📄 App.jsx                # 🚀 Main application
-│   ├── 📄 main.jsx               # 🎯 Application entry point
-│   └── 📄 index.css              # 🎨 Global styles
+│   ├── 📄 index.css              # 🎨 Global styles
+│   └── 📄 main.jsx               # 🎯 Application entry point
 ├── 📂 docs/                      # 📸 Documentation and screenshots
-│   ├── 📄 Home_Page.png          # 🏠 Home page screenshot
 │   ├── 📄 About_Page.png         # ℹ️ About page screenshot
-│   ├── 📄 Portfolio_Showcase.png # 💼 Portfolio page screenshot
-│   └── 📄 Contact_Page.png        # 📧 Contact page screenshot
-├── 📄 package.json               # 📦 Dependencies and scripts
-├── 📄 vite.config.js             # ⚙️ Vite configuration
-├── 📄 tailwind.config.js         # 🎨 Tailwind configuration
+│   ├── 📄 Contact_Page.png       # 📧 Contact page screenshot
+│   ├── 📄 Home_Page.png          # 🏠 Home page screenshot
+│   └── 📄 Portfolio_Showcase.png # 💼 Portfolio page screenshot
+├── 📄 .env                       # 🔐 Environment variables
 ├── 📄 .gitignore                 # 🚫 Git ignore rules
-└── 📄 README.md                  # 📖 Project documentation
+├── 📄 eslint.config.js           # 📋 ESLint configuration
+├── 📄 index.html                 # 🌐 HTML entry point
+├── 📄 package.json               # 📦 Dependencies and scripts
+├── 📄 postcss.config.js          # 🎨 PostCSS configuration
+├── 📄 README.md                  # 📖 Project documentation
+├── 📄 tailwind.config.js         # 🎨 Tailwind configuration
+└── 📄 vite.config.js             # ⚙️ Vite configuration
 ```
 <br>
 
@@ -247,7 +260,7 @@ The portfolio features a local storage-based comments system:
 
 ## 📊 Project Statistics
 
-- **25+ Projects** — Comprehensive project showcase
+- **29 Projects** — Comprehensive project showcase
 - **9 Certificates** — Professional certifications
 - **10+ Technologies** — Modern tech stack
 - **100% Responsive** — Mobile-first design

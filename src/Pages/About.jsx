@@ -89,8 +89,11 @@ const AboutPage = () => {
   }, []);
 
   useEffect(() => {
-    AOS.init({ once: false });
-    return () => AOS.refresh();
+    AOS.init({ 
+      duration: 800,
+      once: true,
+      offset: 50
+    });
   }, []);
 
   const statsData = useMemo(() => [

@@ -12,7 +12,8 @@ import {
   Globe,
 } from "lucide-react";
 
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -118,26 +119,19 @@ const Home = () => {
   const [isHovering, setIsHovering] = useState(false);
 
   const lottieOptions = {
-    src: "https://lottie.host/58753882-bb6a-49f5-a2c0-950eda1e135a/NLbpVqGegK.lottie",
+    src: "/assets/RobotSaludando.lottie",
     loop: true,
     autoplay: true,
-    rendererSettings: { preserveAspectRatio: "xMidYMid slice" },
     style: { width: "100%", height: "100%" },
-    className: `w-full h-full transition-all duration-500 ${
-      isHovering
-        ? "scale-[1.5] sm:scale-[1.4] md:scale-[1.3] lg:scale-[1.2] rotate-2"
-        : "scale-[1.45] sm:scale-[1.35] md:scale-[1.25] lg:scale-[1.2]"
-    }`,
   };
 
   useEffect(() => {
     AOS.init({ 
-      duration: 1000,
-      once: false,
+      duration: 800,
+      once: true,
       mirror: false,
-      offset: 10 
+      offset: 50
     });
-    AOS.refresh();
   }, []);
 
   const handleTyping = useCallback(() => {
@@ -167,9 +161,9 @@ const Home = () => {
 
 
   return (
-    <div className="min-h-screen bg-[#030014] overflow-hidden" id="Home">
+    <div className="min-h-screen bg-[#030014]" id="Home">
       <div className="relative z-10 transition-all duration-1000 opacity-100">
-        <div className="container mx-auto px-[5%] sm:px-6 lg:px-0 min-h-screen">
+        <div className="container mx-auto px-[5%] sm:px-6 lg:px-0 min-h-screen overflow-visible">
           <div className="flex flex-col lg:flex-row items-center justify-center h-screen md:justify-between gap-0 sm:gap-12 lg:gap-20">
             
             {/* Left Column */}
@@ -201,14 +195,26 @@ const Home = () => {
             </div>
 
             {/* Right Column - Lottie */}
-            <div className="w-full py-[10%] sm:py-0 lg:w-1/2 h-auto lg:h-[600px] xl:h-[750px] relative flex items-center justify-center order-2 lg:order-2 mt-8 lg:mt-0"
+            <div
+              className="w-full py-[10%] sm:py-0 lg:w-1/2 h-auto lg:h-[600px] xl:h-[750px] relative flex items-center justify-center order-2 lg:order-2 mt-8 lg:mt-0"
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
               data-aos="fade-left"
               data-aos-delay="600"
             >
-              <div className="relative w-full opacity-90">
-                <DotLottieReact {...lottieOptions} />
+              <div className="relative w-full h-full flex items-center justify-center">
+                {/* Glowing Background */}
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <div className="absolute w-[400px] h-[400px] bg-gradient-to-r from-[#6366f1]/10 to-[#a855f7]/10 rounded-3xl blur-3xl"></div>
+                  <div className="absolute w-[500px] h-[500px] bg-gradient-to-br from-indigo-500/10 to-purple-500/10 blur-3xl"></div>
+                </div>
+
+                {/* Robot Animation */}
+                <div className={`relative z-10 w-full h-full transition-all duration-500 ${
+                  isHovering ? "scale-105" : "scale-100"
+                }`}>
+                  <DotLottieReact {...lottieOptions} />
+                </div>
               </div>
             </div>
 
