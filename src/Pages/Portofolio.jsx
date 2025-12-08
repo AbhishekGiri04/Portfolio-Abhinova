@@ -12,7 +12,8 @@ import TechStackIcon from "../components/TechStackIcon";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Certificate from "../components/Certificate";
-import { Code, Award, Boxes } from "lucide-react";
+import Badge from "../components/Badge";
+import { Code, Award, Boxes, Briefcase, Medal } from "lucide-react";
 
 // Separate ShowMore/ShowLess button component
 const ToggleButton = ({ onClick, isShowingMore }) => (
@@ -118,6 +119,16 @@ export default function FullWidthTabs() {
   const theme = useTheme();
   const [value, setValue] = useState(0);
   const [projects, setProjects] = useState([]);
+  const [badges, setBadges] = useState([
+    { Img: "/badges/Badge1.png" },
+    { Img: "/badges/Badge2.png" },
+    { Img: "/badges/Badge3.png" },
+    { Img: "/badges/Badge4.png" },
+    { Img: "/badges/Badge5.png" }
+  ]);
+  const [internships, setInternships] = useState([
+    { Img: "/internships/Internship1.png" }
+  ]);
   const [certificates, setCertificates] = useState([
     { Img: "/certificates/Certificate1.png" },
     { Img: "/certificates/Certificate2.png" },
@@ -127,10 +138,23 @@ export default function FullWidthTabs() {
     { Img: "/certificates/Certificate6.png" },
     { Img: "/certificates/Certificate7.png" },
     { Img: "/certificates/Certificate8.png" },
-    { Img: "/certificates/Certificate9.png" }
+    { Img: "/certificates/Certificate9.png" },
+    { Img: "/certificates/Certificate10.png" },
+    { Img: "/certificates/Certificate11.png" },
+    { Img: "/certificates/Certificate12.png" },
+    { Img: "/certificates/Certificate13.png" },
+    { Img: "/certificates/Certificate14.png" },
+    { Img: "/certificates/Certificate15.png" },
+    { Img: "/certificates/Certificate16.png" },
+    { Img: "/certificates/Certificate17.png" },
+    { Img: "/certificates/Certificate18.png" },
+    { Img: "/certificates/Certificate19.png" },
+    { Img: "/certificates/Certificate20.png" }
   ]);
   const [showAllProjects, setShowAllProjects] = useState(false);
   const [showAllCertificates, setShowAllCertificates] = useState(false);
+  const [showAllInternships, setShowAllInternships] = useState(false);
+  const [showAllBadges, setShowAllBadges] = useState(false);
   const isMobile = window.innerWidth < 768;
   const initialItems = isMobile ? 4 : 6;
 
@@ -157,13 +181,19 @@ export default function FullWidthTabs() {
   const toggleShowMore = useCallback((type) => {
     if (type === 'projects') {
       setShowAllProjects(prev => !prev);
-    } else {
+    } else if (type === 'certificates') {
       setShowAllCertificates(prev => !prev);
+    } else if (type === 'internships') {
+      setShowAllInternships(prev => !prev);
+    } else {
+      setShowAllBadges(prev => !prev);
     }
   }, []);
 
   const displayedProjects = showAllProjects ? projects : projects.slice(0, initialItems);
   const displayedCertificates = showAllCertificates ? certificates : certificates.slice(0, initialItems);
+  const displayedInternships = showAllInternships ? internships : internships.slice(0, initialItems);
+  const displayedBadges = showAllBadges ? badges : badges.slice(0, initialItems);
 
   return (
     <div className="md:px-[10%] px-[5%] w-full sm:mt-0 mt-[3rem] bg-[#030014] overflow-hidden" id="Portofolio">
@@ -267,9 +297,19 @@ export default function FullWidthTabs() {
               {...a11yProps(1)}
             />
             <Tab
+              icon={<Briefcase className="mb-2 w-5 h-5 transition-all duration-300" />}
+              label="Internships"
+              {...a11yProps(2)}
+            />
+            <Tab
+              icon={<Medal className="mb-2 w-5 h-5 transition-all duration-300" />}
+              label="Badges"
+              {...a11yProps(3)}
+            />
+            <Tab
               icon={<Boxes className="mb-2 w-5 h-5 transition-all duration-300" />}
               label="Tech Stack"
-              {...a11yProps(2)}
+              {...a11yProps(4)}
             />
           </Tabs>
         </AppBar>
@@ -330,6 +370,54 @@ export default function FullWidthTabs() {
           </TabPanel>
 
           <TabPanel value={value} index={2} dir={theme.direction}>
+            <div className="container mx-auto flex justify-center items-center overflow-hidden">
+              <div className="grid grid-cols-1 md:grid-cols-3 md:gap-5 gap-4">
+                {displayedInternships.map((internship, index) => (
+                  <div
+                    key={index}
+                    data-aos={index % 3 === 0 ? "fade-up-right" : index % 3 === 1 ? "fade-up" : "fade-up-left"}
+                    data-aos-duration={index % 3 === 0 ? "1000" : index % 3 === 1 ? "1200" : "1000"}
+                  >
+                    <Certificate ImgSertif={internship.Img} />
+                  </div>
+                ))}
+              </div>
+            </div>
+            {internships.length > initialItems && (
+              <div className="mt-6 w-full flex justify-start">
+                <ToggleButton
+                  onClick={() => toggleShowMore('internships')}
+                  isShowingMore={showAllInternships}
+                />
+              </div>
+            )}
+          </TabPanel>
+
+          <TabPanel value={value} index={3} dir={theme.direction}>
+            <div className="container mx-auto flex justify-center items-center overflow-hidden pb-[5%]">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-8 gap-5">
+                {displayedBadges.map((badge, index) => (
+                  <div
+                    key={index}
+                    data-aos={index % 3 === 0 ? "fade-up-right" : index % 3 === 1 ? "fade-up" : "fade-up-left"}
+                    data-aos-duration={index % 3 === 0 ? "1000" : index % 3 === 1 ? "1200" : "1000"}
+                  >
+                    <Badge ImgSertif={badge.Img} />
+                  </div>
+                ))}
+              </div>
+            </div>
+            {badges.length > initialItems && (
+              <div className="mt-6 w-full flex justify-start">
+                <ToggleButton
+                  onClick={() => toggleShowMore('badges')}
+                  isShowingMore={showAllBadges}
+                />
+              </div>
+            )}
+          </TabPanel>
+
+          <TabPanel value={value} index={4} dir={theme.direction}>
             <div className="container mx-auto flex justify-center items-center overflow-hidden pb-[5%]">
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:gap-8 gap-5">
                 {techStacks.map((stack, index) => (

@@ -102,7 +102,7 @@ const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
 const WORDS = ["AI & ML Engineering Student", "Full-Stack Development Enthusiast"];
-const TECH_STACK = ["Python", "C++", "Java", "React", "Node.js"];
+const TECH_STACK = ["Python", "C++", "Java", "Javascript", "SQL"];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/abhishekgiri04" },
   { icon: Linkedin, link: "https://www.linkedin.com/in/abhishek-giri04/" },

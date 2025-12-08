@@ -112,10 +112,16 @@ Portfolio-Abhinova/
 │   ├── 📂 assets/                # 🖼️ Images and animations
 │   │   ├── 📄 Photo.png          # 👤 Profile photo
 │   │   └── 📄 RobotSaludando.lottie # 🤖 Robot animation
+│   ├── 📂 badges/                # 🏅 Professional badges
+│   │   ├── 📄 Badge1.png         # 🏅 Badge 1
+│   │   ├── 📄 Badge2.png         # 🏅 Badge 2
+│   │   └── ... (5 badges)        # 🏅 More badges
 │   ├── 📂 certificates/          # 🏆 Professional certificates
 │   │   ├── 📄 Certificate1.png   # 🏆 Certificate 1
 │   │   ├── 📄 Certificate2.png   # 🏆 Certificate 2
-│   │   └── ... (9 certificates)  # 🏆 More certificates
+│   │   └── ... (20 certificates) # 🏆 More certificates
+│   ├── 📂 internships/           # 💼 Internship certificates
+│   │   └── 📄 Internship1.png    # 💼 Internship certificate
 │   ├── 📂 icons/                 # 🔧 Technology stack icons
 │   │   ├── 📄 Python.svg         # 🐍 Python icon
 │   │   ├── 📄 Reactjs.svg        # ⚛️ React icon
@@ -125,6 +131,7 @@ Portfolio-Abhinova/
 ├── 📂 src/                       # 💻 Source code directory
 │   ├── 📂 components/            # 🧩 Reusable UI components
 │   │   ├── 📄 Background.jsx     # 🌌 Animated background
+│   │   ├── 📄 Badge.jsx          # 🏅 Badge modal component
 │   │   ├── 📄 CardProject.jsx    # 📋 Project card component
 │   │   ├── 📄 Certificate.jsx    # 🏆 Certificate modal
 │   │   ├── 📄 Commentar.jsx      # 💬 Comments system

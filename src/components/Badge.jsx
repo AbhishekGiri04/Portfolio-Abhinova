@@ -3,7 +3,7 @@ import { Modal, IconButton, Box, Backdrop, Typography } from "@mui/material"
 import CloseIcon from "@mui/icons-material/Close"
 import FullscreenIcon from "@mui/icons-material/Fullscreen"
 
-const Certificate = ({ ImgSertif }) => {
+const Badge = ({ ImgSertif }) => {
 	const [open, setOpen] = useState(false)
 
 	const handleOpen = () => {
@@ -16,9 +16,7 @@ const Certificate = ({ ImgSertif }) => {
 
 	return (
 		<Box component="div" sx={{ width: "100%" }}>
-			{/* Thumbnail Container */}
 			<Box
-				className=""
 				sx={{
 					position: "relative",
 					overflow: "hidden",
@@ -40,7 +38,6 @@ const Certificate = ({ ImgSertif }) => {
 						},
 					},
 				}}>
-				{/* Certificate Image with Initial Filter */}
 				<Box
 					sx={{
 						position: "relative",
@@ -58,13 +55,13 @@ const Certificate = ({ ImgSertif }) => {
 					<img
 						className="certificate-image"
 						src={ImgSertif}
-						alt="Certificate"
+						alt="Badge"
 						style={{
 							width: "100%",
 							height: "220px",
 							display: "block",
 							objectFit: "contain",
-							backgroundColor: "#f8f9fa",
+							backgroundColor: "transparent",
 							filter: "contrast(1.10) brightness(0.9) saturate(1.1)",
 							transition: "filter 0.3s ease",
 						}}
@@ -72,7 +69,6 @@ const Certificate = ({ ImgSertif }) => {
 					/>
 				</Box>
 
-				{/* Hover Overlay */}
 				<Box
 					className="overlay"
 					sx={{
@@ -87,7 +83,6 @@ const Certificate = ({ ImgSertif }) => {
 						zIndex: 2,
 					}}
 					onClick={handleOpen}>
-					{/* Hover Content */}
 					<Box
 						className="hover-content"
 						sx={{
@@ -114,18 +109,17 @@ const Certificate = ({ ImgSertif }) => {
 								fontWeight: 600,
 								textShadow: "0 2px 4px rgba(0,0,0,0.3)",
 							}}>
-							View Certificate
+							View Badge
 						</Typography>
 					</Box>
 				</Box>
 			</Box>
 
-			{/* Modal */}
 			<Modal
 				open={open}
 				onClose={handleClose}
-				aria-labelledby="certificate-modal-title"
-				aria-describedby="certificate-modal-description"
+				aria-labelledby="badge-modal-title"
+				aria-describedby="badge-modal-description"
 				BackdropComponent={Backdrop}
 				BackdropProps={{
 					timeout: 300,
@@ -157,7 +151,6 @@ const Certificate = ({ ImgSertif }) => {
 							outline: "none",
 						},
 					}}>
-					{/* Close Button */}
 					<IconButton
 						onClick={handleClose}
 						sx={{
@@ -177,11 +170,10 @@ const Certificate = ({ ImgSertif }) => {
 						<CloseIcon sx={{ fontSize: 24 }} />
 					</IconButton>
 
-					{/* Modal Image */}
 					<img
-						id="certificate-modal-description"
+						id="badge-modal-description"
 						src={ImgSertif}
-						alt="Certificate Full View"
+						alt="Badge Full View"
 						style={{
 							display: "block",
 							maxWidth: "100%",
@@ -191,9 +183,8 @@ const Certificate = ({ ImgSertif }) => {
 						}}
 					/>
 
-					{/* Hidden Title for accessibility */}
-					<Typography id="certificate-modal-title" variant="h6" sx={{ display: "none" }}>
-						Certificate Preview
+					<Typography id="badge-modal-title" variant="h6" sx={{ display: "none" }}>
+						Badge Preview
 					</Typography>
 				</Box>
 			</Modal>
@@ -201,4 +192,4 @@ const Certificate = ({ ImgSertif }) => {
 	)
 }
 
-export default Certificate
+export default Badge
