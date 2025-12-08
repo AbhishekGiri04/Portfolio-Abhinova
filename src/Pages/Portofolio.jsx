@@ -288,7 +288,7 @@ export default function FullWidthTabs() {
                       Img={project.Img}
                       Title={project.Title}
                       Description={project.Description}
-                      Link={project.Link}
+                      ProjectLink={project.Demo || project.Link}
                       id={project.id}
                     />
                   </div>

@@ -133,7 +133,7 @@ const AboutPage = () => {
               <span className="block mt-2 text-gray-200">Abhishek Giri</span>
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-400 leading-relaxed text-justify pb-4">
-              I am a 3rd-year B.Tech CSE student specializing in Artificial Intelligence and Machine Learning, with over 3 years of hands-on experience in Python, SQL, and DBMS, complemented by a solid foundation in C, C++, Java, Web Development, and Deep Learning. Passionate about innovation and problem-solving, I aspire to contribute to cutting-edge advancements in AI, ML, and software engineering.
+              Pre-final year B.Tech CSE (AI & ML) student at Graphic Era Hill University with 3+ years of experience in Python, SQL, DBMS, web development, and IoT systems. Skilled in building scalable, intelligent full-stack applications and AI/ML-driven solutions, with hands-on experience in cloud platforms, deep learning, and automation. A results-oriented problem solver aspiring to contribute to impactful, large-scale engineering teams.
             </p>
             {/* QUOTE BOX */}
             <div 

@@ -110,7 +110,8 @@ const ProjectDetails = () => {
         ...selectedProject,
         Features: selectedProject.Features || [],
         TechStack: selectedProject.TechStack || [],
-        Github: selectedProject.Github || 'https://github.com/AbhishekGiri04',
+        Github: selectedProject.Link || 'https://github.com/AbhishekGiri04',
+        Demo: selectedProject.Demo || selectedProject.Link,
       };
       setProject(enhancedProject);
     }
@@ -179,7 +180,7 @@ const ProjectDetails = () => {
               <div className="flex flex-wrap gap-3 md:gap-4">
                 {/* Action buttons */}
                 <a
-                  href={project.Link}
+                  href={project.Demo}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group relative inline-flex items-center space-x-1.5 md:space-x-2 px-4 md:px-8 py-2.5 md:py-4 bg-gradient-to-r from-blue-600/10 to-purple-600/10 hover:from-blue-600/20 hover:to-purple-600/20 text-blue-300 rounded-xl transition-all duration-300 border border-blue-500/20 hover:border-blue-500/40 backdrop-blur-xl overflow-hidden text-sm md:text-base"
