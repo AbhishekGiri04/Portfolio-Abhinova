@@ -7,7 +7,11 @@ import {
   Instagram,
   Sparkles,
   Send,
+  Code2,
+  Link2,
+  Globe,
 } from "lucide-react";
+
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -99,11 +103,11 @@ const PAUSE_DURATION = 2000;
 const WORDS = ["AI & ML Engineering Student", "Full-Stack Development Enthusiast"];
 const TECH_STACK = ["Python", "C++", "Java", "React", "Node.js"];
 const SOCIAL_LINKS = [
-  { icon: Github, link: "https://github.com/AbhishekGiri04" },
+  { icon: Github, link: "https://github.com/abhishekgiri04" },
   { icon: Linkedin, link: "https://www.linkedin.com/in/abhishek-giri04/" },
-  { icon: Instagram, link: "https://www.instagram.com/justt.abhiii/" },
-  { icon: UnstopIcon, link: "https://unstop.com/u/abhisgir78674" },
-  { icon: Send, link: "https://t.me/AbhishekGiri7" },
+  { icon: Code2, link: "https://leetcode.com/u/AbhishekGiri0405/" },
+  { icon: Link2, link: "https://linktr.ee/CodeAG.io" },
+  { icon: Globe, link: "https://agnix.netlify.app" },
 ];
 
 const Home = () => {
@@ -113,8 +117,27 @@ const Home = () => {
   const [charIndex, setCharIndex] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
 
+  const lottieOptions = {
+    src: "https://lottie.host/58753882-bb6a-49f5-a2c0-950eda1e135a/NLbpVqGegK.lottie",
+    loop: true,
+    autoplay: true,
+    rendererSettings: { preserveAspectRatio: "xMidYMid slice" },
+    style: { width: "100%", height: "100%" },
+    className: `w-full h-full transition-all duration-500 ${
+      isHovering
+        ? "scale-[1.5] sm:scale-[1.4] md:scale-[1.3] lg:scale-[1.2] rotate-2"
+        : "scale-[1.45] sm:scale-[1.35] md:scale-[1.25] lg:scale-[1.2]"
+    }`,
+  };
+
   useEffect(() => {
-    AOS.init({ once: true, offset: 10 });
+    AOS.init({ 
+      duration: 1000,
+      once: false,
+      mirror: false,
+      offset: 10 
+    });
+    AOS.refresh();
   }, []);
 
   const handleTyping = useCallback(() => {
@@ -141,18 +164,7 @@ const Home = () => {
     return () => clearTimeout(timeout);
   }, [handleTyping, isTyping]);
 
-  const lottieOptions = {
-    src: "https://lottie.host/58753882-bb6a-49f5-a2c0-950eda1e135a/NLbpVqGegK.lottie",
-    loop: true,
-    autoplay: true,
-    rendererSettings: { preserveAspectRatio: "xMidYMid slice" },
-    style: { width: "100%", height: "100%" },
-    className: `w-full h-full transition-all duration-500 ${
-      isHovering
-        ? "scale-[1.5] sm:scale-[1.4] md:scale-[1.3] lg:scale-[1.2] rotate-2"
-        : "scale-[1.45] sm:scale-[1.35] md:scale-[1.25] lg:scale-[1.2]"
-    }`,
-  };
+
 
   return (
     <div className="min-h-screen bg-[#030014] overflow-hidden" id="Home">

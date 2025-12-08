@@ -57,13 +57,11 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
     });
 
     const timer = setTimeout(() => {
-      console.log('Setting isLoading to false');
       setIsLoading(false);
       setTimeout(() => {
-        console.log('Calling onLoadingComplete');
         onLoadingComplete?.();
       }, 1000);
-    }, 2000); // Reduced from 4000 to 2000 for faster testing
+    }, 5500);
 
     return () => clearTimeout(timer);
   }, [onLoadingComplete]);

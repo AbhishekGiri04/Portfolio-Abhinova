@@ -82,7 +82,7 @@ const AboutPage = () => {
     const today = new Date();
     const experience = today.getFullYear() - startDate.getFullYear() - (today < new Date(today.getFullYear(), startDate.getMonth(), startDate.getDate()) ? 1 : 0);
     return {
-      totalProjects: 25,
+      totalProjects: 30,
       totalCertificates: 9,
       YearExperience: experience,
     };
