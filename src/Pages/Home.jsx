@@ -215,7 +215,6 @@ const Home = () => {
                     className="w-full h-full"
                     style={{ pointerEvents: 'auto' }}
                   />
-                  <div className="absolute bottom-0 right-0 w-40 h-16 z-50" style={{ background: '#060020', backgroundImage: 'linear-gradient(to right, #4f4f4f25 1px, transparent 1px), linear-gradient(to bottom, #4f4f4f25 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
                 </div>
               </div>
             </div>
