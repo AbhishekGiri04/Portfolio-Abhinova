@@ -41,11 +41,12 @@ Portfolio-Abhinova is designed to provide:
 ## 🚀 Features
 
 ✅  **Interactive Welcome Screen** with typewriter effects  
+✅  **3D Robot Animation** with Spline integration  
 ✅  **Dynamic Project Portfolio** with 29 projects showcase  
 ✅  **Real-time Comments System** with local storage  
 ✅  **Professional About Section** with animated statistics  
 ✅  **Skills & Technology Stack** with interactive icons  
-✅  **Certificate Gallery** with modal preview  
+✅  **Certificate & Badge Gallery** with modal preview  
 ✅  **Contact Form** with FormSubmit integration  
 ✅  **Social Media Integration** with all platforms  
 ✅  **Responsive Design** for mobile and desktop  
@@ -110,12 +111,13 @@ Portfolio-Abhinova is designed to provide:
 Portfolio-Abhinova/
 ├── 📂 public/                     # 🎨 Static assets and resources
 │   ├── 📂 assets/                # 🖼️ Images and animations
-│   │   ├── 📄 Photo.png          # 👤 Profile photo
-│   │   └── 📄 RobotSaludando.lottie # 🤖 Robot animation
+│   │   └── 📄 Photo.png          # 👤 Profile photo
 │   ├── 📂 badges/                # 🏅 Professional badges
 │   │   ├── 📄 Badge1.png         # 🏅 Badge 1
 │   │   ├── 📄 Badge2.png         # 🏅 Badge 2
-│   │   └── ... (5 badges)        # 🏅 More badges
+│   │   ├── 📄 Badge3.png         # 🏅 Badge 3
+│   │   ├── 📄 Badge4.png         # 🏅 Badge 4
+│   │   └── 📄 Badge5.png         # 🏅 Badge 5
 │   ├── 📂 certificates/          # 🏆 Professional certificates
 │   │   ├── 📄 Certificate1.png   # 🏆 Certificate 1
 │   │   ├── 📄 Certificate2.png   # 🏆 Certificate 2

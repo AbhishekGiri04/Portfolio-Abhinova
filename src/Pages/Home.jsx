@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 
 
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -118,12 +117,7 @@ const Home = () => {
   const [charIndex, setCharIndex] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
 
-  const lottieOptions = {
-    src: "/assets/RobotSaludando.lottie",
-    loop: true,
-    autoplay: true,
-    style: { width: "100%", height: "100%" },
-  };
+
 
   useEffect(() => {
     AOS.init({ 
@@ -194,9 +188,9 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Right Column - Lottie */}
+            {/* Right Column - Robot */}
             <div
-              className="w-full py-[10%] sm:py-0 lg:w-1/2 h-auto lg:h-[600px] xl:h-[750px] relative flex items-center justify-center order-2 lg:order-2 mt-8 lg:mt-0"
+              className="w-full py-[10%] sm:py-0 lg:w-[60%] h-auto lg:h-[502px] xl:h-[627px] relative flex items-center justify-center order-2 lg:order-2 mt-8 lg:mt-0 overflow-visible -ml-64"
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
               data-aos="fade-left"
@@ -204,16 +198,24 @@ const Home = () => {
             >
               <div className="relative w-full h-full flex items-center justify-center">
                 {/* Glowing Background */}
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="absolute w-[400px] h-[400px] bg-gradient-to-r from-[#6366f1]/10 to-[#a855f7]/10 rounded-3xl blur-3xl"></div>
-                  <div className="absolute w-[500px] h-[500px] bg-gradient-to-br from-indigo-500/10 to-purple-500/10 blur-3xl"></div>
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 ml-12">
+                  <div className="absolute w-[500px] h-[500px] bg-gradient-to-r from-[#6366f1]/20 to-[#a855f7]/20 rounded-full blur-3xl"></div>
+                  <div className="absolute w-[600px] h-[600px] bg-gradient-to-br from-indigo-500/15 to-purple-500/15 rounded-full blur-3xl"></div>
                 </div>
 
                 {/* Robot Animation */}
-                <div className={`relative z-10 w-full h-full transition-all duration-500 ${
+                <div className={`relative z-10 w-full h-full flex items-center justify-center transition-all duration-500 ml-40 mt-8 ${
                   isHovering ? "scale-105" : "scale-100"
                 }`}>
-                  <DotLottieReact {...lottieOptions} />
+                  <iframe 
+                    src="https://my.spline.design/genkubgreetingrobot-MW4W3iAFsJj5olFfT1MhN0TH/" 
+                    frameBorder="0" 
+                    width="100%" 
+                    height="100%" 
+                    className="w-full h-full"
+                    style={{ pointerEvents: 'auto' }}
+                  />
+                  <div className="absolute bottom-0 right-0 w-40 h-16 z-50" style={{ background: '#060020', backgroundImage: 'linear-gradient(to right, #4f4f4f25 1px, transparent 1px), linear-gradient(to bottom, #4f4f4f25 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
                 </div>
               </div>
             </div>
